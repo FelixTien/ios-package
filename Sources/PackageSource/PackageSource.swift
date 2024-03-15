@@ -52,5 +52,6 @@ public struct PackageSource: View {
             }
         }
         .padding()
+        .opacity(press ? 1 : 0)
     }
 }
