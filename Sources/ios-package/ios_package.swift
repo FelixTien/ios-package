@@ -5,13 +5,13 @@ import SwiftUI
 
 @available(iOS 16, *)
 public struct PackageSource: View {
-    var boxBackgroundColor: Color
-    var boxWidth: CGFloat
-    var boxHeight: CGFloat
-    var title: String
-    var message: String
-    var messageSize: CGFloat
-    @Binding var press: Bool
+    public var boxBackgroundColor: Color
+    public var boxWidth: CGFloat
+    public var boxHeight: CGFloat
+    public var title: String
+    public var message: String
+    public var messageSize: CGFloat
+    @Binding public var press: Bool
     
     public init(boxBackgroundColor: Color, boxWidth: CGFloat, boxHeight: CGFloat, title: String, message: String, messageSize: CGFloat, press: Binding<Bool>) {
         self.boxBackgroundColor = boxBackgroundColor
