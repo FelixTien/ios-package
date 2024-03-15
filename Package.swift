@@ -4,20 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "PackageSource",
+    name: "ios-package",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "PackageSource",
-            targets: ["PackageSource"]),
+            name: "ios-package",
+            targets: ["ios-package"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "PackageSource"),
+            name: "ios-package"),
         .testTarget(
-            name: "PackageSourceTests",
-            dependencies: ["PackageSource"]),
+            name: "ios-packageTests",
+            dependencies: ["ios-package"]),
     ]
 )
