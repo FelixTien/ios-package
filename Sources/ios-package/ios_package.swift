@@ -13,16 +13,6 @@ public struct PackageSource: View {
     public var messageSize: CGFloat
     @Binding public var press: Bool
     
-    public init(boxBackgroundColor: Color, boxWidth: CGFloat, boxHeight: CGFloat, title: String, message: String, messageSize: CGFloat, press: Binding<Bool>) {
-        self.boxBackgroundColor = boxBackgroundColor
-        self.boxWidth = boxWidth
-        self.boxHeight = boxHeight
-        self.title = title
-        self.message = message
-        self.messageSize = messageSize
-        self._press = press
-    }
-    
     public var body: some View {
         ZStack {
             Rectangle()
